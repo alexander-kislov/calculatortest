@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Alexander Kislov">
+    <meta name="description" content="Calculator Test">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Calculator Test</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="calculator-container">
+          <div class="calculator-content">
+            <section>
+              <div class="product-weight flex-align">
+                <p class="caption-text">Вес изделия</p>
+                <input type="text" placeholder="15 г">
+              </div>
+            </section>
+            <section>
+              <div class="sample-metal flex-align">
+                <p class="caption-text">Проба металла</p>
+                <div class="col-input-select">
+                  <select class="select-sample">
+                    <option value="375 проба">375 проба</option>
+                    <option value="500 проба">500 проба</option>
+                    <option value="583 проба">583 проба</option>
+                    <option value="585 проба" selected>585 проба</option>
+                    <option value="750 проба">750 проба</option>
+                    <option value="916 проба">916 проба</option>
+                    <option value="958 проба">958 проба</option>
+                    <option value="999 проба">999 проба</option>
+                  </select>
+                  <input class="input-sample" type="text" name="" value="">
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="stones-inserts flex-align">
+                <label class="label label-toggle">
+                  <div class="input-toggle">
+                    <input class="input-checkbox" id="night-mode" type="checkbox"><span class="input-toggle-handle"></span>
+                  </div>
+                </label>
+                <p>Камни и вставки </p>
+                <p class="hide">Окончательная оценочная  стоимость залога может  отличаться от указанной в расчете</p>
+              </div>
+            </section>
+            <section>
+              <div class="tariff-plan flex-align">
+                <p class="caption-text">Тарифный план</p>
+                <div class="tooltip-container"><img src="img/info-icon.svg" alt="info-icon.svg"><span class="tooltiptext">Всплывающая подсказка</span></div>
+                <div class="md-select md-select-tariff">
+                  <label for="ul-tariff">
+                    <button class="ng-binding" type="button"></button>
+                  </label>
+                  <ul id="ul-tariff" role="listbox" name="ul-tariff">
+                    <li class="ng-binding ng-scope active" role="option" tabindex="-1" aria-selected="true">&#171;Простой&#187;</li>
+                    <li class="ng-binding ng-scope" role="option" tabindex="-1" aria-selected="false">&#171;Другой&#187;</li>
+                    <li class="ng-binding ng-scope" role="option" tabindex="-1" aria-selected="false">&#171;Еще один&#187;</li>
+                    <li class="ng-binding ng-scope" role="option" tabindex="-1" aria-selected="false">&#171;Последний&#187;</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="discount-status flex-align">
+                <p class="caption-text">Ваш дисконтный статус </p>
+                <div class="md-select md-select-discount">
+                  <label for="ul-discount">
+                    <button class="ng-binding" type="button"></button>
+                  </label>
+                  <ul id="ul-discount" role="listbox" name="ul-discount">
+                    <li class="ng-binding ng-scope active" role="option" tabindex="-1" aria-selected="true">Без статуса</li>
+                    <li class="ng-binding ng-scope" role="option" tabindex="-1" aria-selected="false">Co статусом</li>
+                    <li class="ng-binding ng-scope" role="option" tabindex="-1" aria-selected="false">C другим статусом</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="loan-terms flex-align">
+                <p class="caption-text">Срок кредитования  до продления</p>
+                <div id="rangeSlider"></div>
+              </div>
+            </section>
+            <section>
+              <div class="loan-calculate flex-align">
+                <button type="button">Рассчитать кредит</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
